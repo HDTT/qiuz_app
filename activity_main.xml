@@ -1,86 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
-    tools:context=".MainActivity"
-    android:weightSum="1">
+    android:background="@drawable/snow"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/tvTenApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:text="Quiz App HDTT"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="30dp" />
 
-            android:text="Quiz App HDTT"
-            android:textSize="30dp"
-            android:textColor="#2B9A22"
-            android:id="@+id/tvTenApp"
-            android:gravity="center"
-            android:layout_weight="0.3" />
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="150dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.4"
+        android:background="@drawable/begin" />
+
+    <LinearLayout
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnStart"
-            android:layout_width="120dp"
-            android:layout_height="15dp"
-            android:background="@drawable/star"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.3" />
+            android:id="@+id/btnUnMute"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:layout_weight="0.08"
+            android:background="@drawable/volume1"
+            android:gravity="center_horizontal" />
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <Button
+            android:id="@+id/btnInformation"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:layout_weight="0.05"
+            android:background="@drawable/info"
+            android:gravity="center_horizontal" />
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="0.2">
+        <Button
+            android:id="@+id/highscore"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/highscore1"
+            android:gravity="center_horizontal" />
 
-
-
-
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/mute"
-                android:id="@+id/btnMute"/>
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/volume1"
-                android:id="@+id/btnUnMute"/>
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/ifnormation"
-                android:id="@+id/btnInformation" />
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/unnamed"
-                android:id="@+id/btnShare"/>
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/help"
-                android:id="@+id/btnHelp"/>
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:text="App development by team HDTT @2017"
-            android:id="@+id/tvInformation"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.1" />
-
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:layout_weight="0.05"
+            android:background="@drawable/help"
+            android:gravity="center_horizontal" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0.1"
+        android:paddingTop="10dp"
+        android:textStyle="italic"
+        android:textColor="#FF0000"
+        android:text="App development by team HDTT @2017"
+        android:textSize="15dp" />
+
+</LinearLayout>
